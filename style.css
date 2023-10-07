@@ -1,0 +1,1072 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=League+Spartan:wght@200;400;500;600;700&family=Sancreek&display=swap");
+
+/* SELECTORS WITH CUSTOM STYLING */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 25px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+button.normal {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 15px 30px;
+  color: black;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+body {
+  width: 100%;
+}
+
+/* HEADER SECTION*/
+.logo {
+  height: 5rem;
+  width: fit-content;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background: #191919;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  /* text-decoration: none; */
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #a07a60;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #a07a60;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.ri-user-3-fill {
+  position: relative;
+  top: 2px;
+  right: 2px;
+  z-index: -1;
+}
+
+#lg-bag2 i {
+  font-size: 1.3rem;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#close {
+  display: none;
+}
+
+/* HOMEPAGE */
+#hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url("./assets/hero_section/hero2.jpg");
+
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-banner-text > * {
+  font-family: "Sancreek";
+  font-weight: 400;
+  letter-spacing: 4px;
+  color: white;
+}
+
+#hero h4 {
+  padding-bottom: 1.5rem;
+}
+
+#hero h2 span {
+  font-family: "Sancreek";
+  color: #a07a60;
+}
+
+#hero button {
+  border: 1px solid white;
+  background: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#hero button:hover {
+  background-color: #a07a60;
+}
+
+/* FEATURE SECTION */
+
+#feature .feat-box {
+  font-weight: 600;
+  letter-spacing: 2px;
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #4b34258e;
+  border-radius: 5%;
+  margin: 15px 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#feature .feat-box:hover {
+  box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.3);
+}
+
+#feature .feat-box img {
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .feat-box h6 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#featured-product {
+  text-align: center;
+}
+
+#featured-product h2 {
+  font-family: "Sancreek";
+}
+
+#featured-product .product-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#featured-product .product {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #b9a9a08e;
+  border-radius: 5%;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.3s ease;
+  position: relative;
+  /* flex-basis: 30%; */
+}
+
+#featured-product .product:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+}
+
+#featured-product .product img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+#featured-product .product .desc > * {
+  font-family: "Lato";
+}
+
+#featured-product .product .desc {
+  text-align: start;
+  padding: 10px 0;
+  letter-spacing: 0.5px;
+}
+
+#featured-product .product .desc span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#featured-product .product .desc h5 {
+  padding-top: 7px;
+  font-size: 14px;
+}
+
+#featured-product .product .desc h4 {
+  /* font-size: 15px; */
+  padding-top: 7px;
+  font-weight: 700;
+  color: #775a46;
+}
+
+#featured-product .product .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #775a46;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+.ri-shopping-cart-2-line {
+  font-size: large;
+  color: white;
+}
+
+/* BANNER SECTION */
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("./assets/banner/ban2.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h2 {
+  font-family: "Sancreek";
+  font-size: 4rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.83);
+}
+
+#banner h4 {
+  color: rgba(255, 255, 255, 0.586);
+  padding-top: 10px;
+}
+
+#banner button {
+  font-family: "Sancreek";
+  border: 1px solid white;
+  color: #ffffff;
+  background: none;
+  padding: 10px 20px;
+  margin-top: 0.8rem;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#banner button:hover {
+  background-color: #a07a60;
+}
+
+/* NEWSLETTER SECTION */
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("./assets/banner/ban2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#newsletter h4 {
+  font-family: "Sancreek";
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.83);
+}
+
+#newsletter p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.586);
+}
+
+#newsletter .form {
+  display: flex;
+  width: 35%;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+  background-color: #a07a60;
+  color: #ffffff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+#newsletter button:hover {
+  background-color: #775a46;
+  color: #ffffff;
+}
+
+/* FOOTER SECTION */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  color: #775a46e3;
+  margin-bottom: 10px;
+}
+
+footer .col .follow {
+  margin: 1.5rem 0;
+}
+
+footer .follow i {
+  color: #775a46;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #503625;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+/* Shop Page */
+
+/* Avidhan Single Product */
+
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+
+#prodetails .single-pro-image {
+  width: 35%;
+  margin-right: 50px;
+}
+
+#MainImg {
+  border: 1px solid #00000032;
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.small-image-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-image-col {
+  flex-basis: 24%;
+  cursor: pointer;
+  border: 1px solid #0000005d;
+}
+
+#prodetails .single-pro-details {
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+#prodetails .single-pro-details h6 {
+  font-size: 15px;
+}
+
+#prodetails .single-pro-details h4 {
+  font-size: 50px;
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#prodetails .single-pro-details h2 {
+  padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details button {
+  font-weight: 400;
+  background-color: #775a46;
+  color: #ffffff;
+}
+
+#prodetails .single-pro-details span {
+  line-height: 25px;
+}
+
+/* Dhurjati Shop Page Main*/
+
+#header1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 80px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("./assets/banner/ban2.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+  z-index: 1;
+  position: static;
+  top: 103px;
+  left: 0;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #ffffff;
+  transition: 0.3s ease;
+  position: sticky;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Subhrajit*/
+/*cart-sidebar- cart details*/
+.cart-icon {
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  right: -100%;
+  width: 360px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: -2px solid 4px hsl(0 4% 15% / 10%);
+  border: 1px solid #fd4646;
+  transition: 1.5s;
+}
+.cart-sidebar.active {
+  right: 0;
+  transition: 0.5s;
+}
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.cart-price {
+  font-weight: 500;
+}
+.cart-quantity {
+  border: 1px solid #171427;
+  outline-color: #fd4646;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove {
+  font-size: 24px;
+  color: #fd4646;
+  cursor: pointer;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid #171427;
+}
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.total-price {
+  margin-left: 0.5rem;
+}
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background-color: #4946fd;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-buy:hover {
+  background-color: #171427;
+}
+#cart-close {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: #171427;
+  cursor: pointer;
+}
+
+/*ABOUT PAGE*/
+#about-head {
+  display: flex;
+  align-items: center;
+}
+#about-head img {
+  width: 50%;
+  height: auto;
+}
+#about-head div {
+  padding-left: 40px;
+}
+
+/* CONTACT US PAGE */
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#page-header {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url("./assets/banner/ban2.jpg");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#page-header h2 {
+  font-family: "Sancreek";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.83);
+}
+
+#page-header p {
+  color: rgba(255, 255, 255, 0.586);
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 2rem;
+  line-height: 54px;
+  padding: 20px 0;
+}
+
+#contact-details .details h3 {
+  padding-bottom: 15px;
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 15px;
+  padding-right: 22px;
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 15px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#form-details {
+  margin: 30px;
+  padding: 80px;
+  border: 6px solid transparent;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
+  border-image: url("./assets/banner/ban3.jpg") 50 round;
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: #a07a60;
+  color: #e1e1e1;
+  border-radius: 4px;
+}
+
+#form-details form button:hover {
+  background-color: #775a46;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 990px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    height: 100vh;
+    width: 300px;
+    background-color: #191919;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.83);
+    padding: 80px 0 0 10px;
+    transition: 0.3s ease;
+  }
+
+  #lg-bag2 {
+    display: none;
+  }
+
+  #navbar.active {
+    right: 0px;
+    position: absolute;
+  }
+
+  #navbar li {
+    margin-bottom: 1.5rem;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile > * {
+    font-size: 1.8rem;
+    color: white;
+    padding-left: 2.5rem;
+  }
+
+  #mobile a:hover {
+    color: #a07a60;
+  }
+
+  #bar {
+    cursor: pointer;
+  }
+
+  #close {
+    display: initial;
+    color: #a07a60;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1.8rem;
+  }
+
+  #lg-bag {
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+    background-position: top 30% right 30%;
+  }
+
+  #feature {
+    justify-content: center;
+  }
+
+  #feature .feat-box {
+    margin: 15px 15px;
+  }
+
+  #featured-product .product-container {
+    justify-content: center;
+  }
+
+  #featured-product h2 {
+    font-size: 2rem;
+  }
+
+  #featured-product .product {
+    margin: 15px;
+  }
+
+  #banner {
+    height: 30vh;
+  }
+
+  #newsletter {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #newsletter .form {
+    width: 63%;
+  }
+
+  /* Avidhan Single Product */
+
+  #prodetails {
+    display: flex;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+
+  /* CONTACT US PAGE */
+  #page-header {
+    height: 20vh;
+  }
+
+  #form-details {
+    padding: 40px;
+  }
+
+  #contact-details .details h2 {
+    font-size: 1.7rem;
+  }
+
+  #contact-details .map {
+    width: 55%;
+    height: 27rem;
+  }
+}
+
+@media (max-width: 477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 20px;
+  }
+
+  #hero {
+    height: 80vh;
+    background-position: 55%;
+    padding: 0 20px;
+  }
+
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+
+  #hero h4 {
+    font-size: 1.3rem;
+  }
+
+  #hero p {
+    letter-spacing: 2.2px;
+    font-size: 0.7rem;
+  }
+
+  #feature {
+    justify-content: space-evenly;
+  }
+
+  #feature .feat-box {
+    width: 160px;
+    margin: 15px 0;
+  }
+
+  #featured-product h2 {
+    font-size: 1.4rem;
+  }
+
+  #featured-product .product {
+    width: 80%;
+  }
+
+  #banner {
+    height: 25vh;
+  }
+
+  #banner h2 {
+    font-size: 2rem;
+  }
+
+  #banner h4 {
+    font-size: 1rem;
+  }
+
+  #newsletter .form {
+    width: 89%;
+  }
+
+  #newsletter p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.586);
+  }
+
+  /* Avidhan Single Product */
+
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #prodetails .single-pro-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+
+  /* CONTACT US PAGE */
+  #page-header {
+    height: 20vh;
+  }
+
+  #page-header h2 {
+    font-size: 2.3rem;
+  }
+
+  #contact-details {
+    flex-direction: column;
+  }
+
+  #contact-details .details {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact-details .details h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  #contact-details .map {
+    width: 100%;
+    height: 40vh;
+  }
+
+  #form-details {
+    margin: 10px;
+    padding: 30px 10px;
+  }
+
+  #form-details form h2 {
+    font-size: 1.5rem;
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #newsletter h4 {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+
+  footer .col .follow {
+    margin: 1.5rem 0;
+  }
+}
+/* For Medium Devices */
+@media (max-width: 400px) {
+  .cart-sidebar {
+    width: 320px;
+  }
+}
+
+/* For Small Devices */
+@media (max-width: 360px) {
+  .cart-sidebar {
+    width: 280px;
+  }
+}

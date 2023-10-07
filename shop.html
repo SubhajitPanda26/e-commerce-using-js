@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Curio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"
+        ><img
+          src="./assets/logo/app_logo2.png"
+          alt="site's logo"
+          class="logo"
+          onclick="window.location.href='index.html';"
+      /></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag2">
+            <i class="ri-shopping-bag-line cart-icon"></i>
+            <!-- CART  -->
+            <div class="cart-sidebar">
+              <h2 class="cart-title">Your Cart</h2>
+
+              <!-- CONTENT  -->
+              <div class="cart-content"></div>
+
+              <!-- TOTAL   -->
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+              <!-- BUY BUTTON  -->
+              <button type="button" class="btn-buy">Buy Now</button>
+              <!-- CART CLOSE  -->
+              <i class="bx bx-x" id="cart-close"></i>
+            </div>
+          </li>
+          <li id="lg-bag">
+            <a href="login.html"><i class="ri-user-3-fill"></i> Sign In</a>
+          </li>
+
+          <a href="#" id="close"><i class="ri-close-circle-line"></i></a>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <a href="login.html"><i class="ri-user-3-fill"></i></a>
+        <a href="#"> <i class="ri-shopping-bag-line cart-icon"></i></a>
+
+        <i id="bar" class="ri-menu-3-line"></i>
+      </div>
+    </section>
+
+    <section id="header1">
+      <div class="fix">
+        <ul id="navbar">
+          <li><a href="#top">ART & SCULPTURE</a></li>
+          <li><a href="#a2">CERAMICS & POTTERY</a></li>
+          <li><a href="#a3">COINS AND CURRENCY</a></li>
+          <li><a href="#a4">ANTIQUE INSTRUMENTS</a></li>
+          <li><a href="#a5">RARE BOOKS</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="featured-product" class="section-p1">
+      <h2>>>>> ART & SCULPTURE <<<<</h2>
+      <div class="product-container">
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_2/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product2.html';"
+          />
+          <div class="desc">
+            <span>Art & Sculpture</span>
+            <h5 class="product-title">A Dancing Lady</h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$6999</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_3/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product3.html';"
+          />
+          <div class="desc">
+            <span>Art & Sculpture</span>
+            <h5 class="product-title">Vintage Goblet</h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$4999</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_4/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product4.html';"
+          />
+          <div class="desc">
+            <span>Art & Sculpture</span>
+            <h5 class="product-title">Imperial Horse Sculpture</h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <p id="a2"></p>
+            </div>
+            <h4 class="product-price">$7499</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-product" class="section-p1">
+      <h2>>>>> CERAMICS & POTTERY <<<<</h2>
+      <div class="product-container">
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_1/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product1.html';"
+          />
+          <div class="desc">
+            <span>Ceramics & Pottery</span>
+            <h5 class="product-title">
+              Blue & White Hand Painted Ceramic Vase
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$20000</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_5/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product5.html';"
+          />
+          <div class="desc">
+            <span>Ceramics & Pottery</span>
+            <h5 class="product-title">Vintage Kashmiri Art Bowl</h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <p id="a3"></p>
+            </div>
+            <h4 class="product-price">$2999</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-product" class="section-p1">
+      <h2>>>>> COINS & CURRENCY <<<<</h2>
+      <div class="product-container">
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_7/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product7.html';"
+          />
+          <div class="desc">
+            <span>Coins & Currency</span>
+            <h5 class="product-title">
+              Ancient Huge Mesoamerican Aztec Maya Calendar Antique Bronze
+              Medallion Maya Coin
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <p id="p3"></p>
+            </div>
+            <h4 class="product-price">$5999</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_6/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product6.html';"
+          />
+          <div class="desc">
+            <span>Coins & Currency</span>
+            <h5 class="product-title">
+              1 Rupee 1947 King George VI, British India Rare Collectible Coin
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <p id="a4"></p>
+            </div>
+            <h4 class="product-price">$1500</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-product" class="section-p1">
+      <h2>>>>> ANTIQUE INSTRUMENTS <<<<</h2>
+      <div class="product-container">
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_8/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product8.html';"
+          />
+          <div class="desc">
+            <span>Antique Instruments</span>
+            <h5 class="product-title">
+              Multi-Colored Resin Antique Telephone Tabletop Clock
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$1299</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_9/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product9.html';"
+          />
+          <div class="desc">
+            <span>Antique Instruments</span>
+            <h5 class="product-title">
+              Antique Vintage Old Silver Design Gramophone Player
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$4599</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_12/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product12.html';"
+          />
+          <div class="desc">
+            <span>Antique Instruments</span>
+            <h5 class="product-title">Japanese Bioscope</h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <p id="a5"></p>
+            </div>
+            <h4 class="product-price">$165000</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-product" class="section-p1">
+      <h2>>>>> RARE BOOKS <<<<</h2>
+      <div class="product-container">
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_11/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product11.html';"
+          />
+          <div class="desc">
+            <span>Rare Books</span>
+            <h5 class="product-title">
+              Bishop Heber's Narrative, Vol. 1 and 2; First Ed.
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$145000</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+
+        <div class="product">
+          <img
+            class="product-img"
+            src="./assets/featured_product/Product_10/1.jpg"
+            alt="product-1"
+            onclick="window.location.href='product10.html';"
+          />
+          <div class="desc">
+            <span>Rare Books</span>
+            <h5 class="product-title">
+              The Sportsman's Book for India; 1904, First Ed.
+            </h5>
+            <div class="star">
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+            <h4 class="product-price">$20000</h4>
+          </div>
+          <div class="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up for Newsletters</h4>
+        <p>Join Our Mailing List to Stay in the Loop for Everything Curio!</p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your Email Address" />
+        <button class="normal">Subscribe</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <!-- <img src="./assets/logo/app_logo2.png" alt="footer-logo" /> -->
+        <h4>Contact</h4>
+        <p>
+          <strong>Address:</strong> 86, Churchgate, Gill Stree, Ratlam, Keralat
+        </p>
+        <p><strong>Phone:</strong> 07823741912</p>
+        <p><strong>Hours:</strong> 09.00 - 18.00, Monday - Friday</p>
+        <div class="follow">
+          <h4>Follow Us</h4>
+          <div class="icon">
+            <i class="ri-facebook-circle-fill"></i>
+            <i class="ri-twitter-x-line"></i>
+            <i class="ri-whatsapp-fill"></i>
+            <i class="ri-instagram-line"></i>
+            <i class="ri-youtube-fill"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+      <div class="col">
+        <h4>Secured Payment Gateways</h4>
+        <img src="./assets/footer/pay.png" alt="payment-logo" />
+      </div>
+      <div class="copyright">
+        <p>© 2023 CurioSity. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
